@@ -16,7 +16,7 @@ export const ResultPanel = ({ result }) => {
         {result.isSpam ? <AlertTriangle className="w-8 h-8 text-red-400" /> : <CheckCircle className="w-8 h-8 text-green-400" />}
         <div>
           <p className="font-bold text-lg">{result.isSpam ? "SPAM" : "HAM (Legitim)"}</p>
-          <p className="text-sm text-purple-600">Încredere: {result.confidence}%</p>
+          <p className="text-sm text-purple-600">Acuratețe: {result.confidence}%</p>
         </div>
       </div>
 

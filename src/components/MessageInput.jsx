@@ -6,7 +6,7 @@ export const MessageInput = ({ message, setMessage, handleClassify, examples }) 
     <div className="card border-purple-300">
       <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
         <Mail className="w-6 h-6" />
-        Testează Detectorul
+        Testează Mesajul
       </h2>
 
       <textarea
@@ -16,7 +16,9 @@ export const MessageInput = ({ message, setMessage, handleClassify, examples }) 
         className="w-full h-32 bg-white/30 rounded-lg p-4 border border-purple-200 focus:outline-none mb-4"
       />
 
-      <button onClick={handleClassify}>Clasifică Mesajul</button>
+     <button className="btn-primary" onClick={handleClassify}>
+      Clasifică Mesajul
+    </button>
 
       <div className="mt-4 space-y-2">
         {examples.map((ex, idx) => (

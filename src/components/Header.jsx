@@ -7,6 +7,5 @@ export const Header = () => (
       <Shield className="w-12 h-12 text-purple-400 logo" />
       <h1 className="text-4xl font-bold text-purple-700">Detector Anti-Spam ML</h1>
     </div>
-    <p className="text-purple-500 italic">Machine Learning pentru Mesaje în Română</p>
   </div>
 );

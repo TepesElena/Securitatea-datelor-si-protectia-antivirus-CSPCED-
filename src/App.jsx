@@ -42,8 +42,7 @@ const App = () => {
   return (
     <div className="app-wrapper">
       <Header />
-      <StatsCards stats={stats} />
-
+      
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
         <MessageInput
           message={message}
@@ -55,6 +54,7 @@ const App = () => {
         <ResultPanel result={result} />
       </div>
 
+      <StatsCards stats={stats} />
       <DatasetChart stats={stats} />
     </div>
   );
