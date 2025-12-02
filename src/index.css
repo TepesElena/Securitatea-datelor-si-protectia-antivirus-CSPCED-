@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===============================
+   WRAPPER GENERAL APP
+================================ */
+.app-wrapper {
+    min-height: 100vh !important;
+    padding: 2.5rem !important;
+
+    background: linear-gradient(135deg, #fbe8f4, #fdeff7, #fff5fb) !important;
+
+    display: block !important;
+    border-radius: 24px !important;
+    max-width: 1280px !important;
+    margin: 0 auto !important;
+
+    box-shadow: 0 0 35px rgba(255, 150, 200, 0.25) !important;
+    border: 2px solid rgba(255, 170, 210, 0.3) !important;
+    text-align: center !important;
+}
+
+/* ===============================
+   LOGO
+================================ */
+.logo {
+    height: 6em !important;
+    padding: 1.5em !important;
+    will-change: filter !important;
+
+    filter: drop-shadow(0 0 8px rgba(255, 140, 190, 0.35)) !important;
+    transition: filter 300ms, transform 300ms !important;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 18px rgba(255, 120, 180, 0.55)) !important;
+    transform: scale(1.05) !important;
+}
+
+.logo.react:hover {
+    filter: drop-shadow(0 0 18px rgba(190, 120, 255, 0.5)) !important;
+}
+
+/* ===============================
+   ANIMAȚIE LOGO
+================================ */
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg) !important;
+    }
+
+    to {
+        transform: rotate(360deg) !important;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 22s linear !important;
+    }
+}
+
+/* ===============================
+   CARD UI
+================================ */
+.card {
+    padding: 2.2em !important;
+    background: rgba(255, 255, 255, 0.7) !important;
+
+    border: 2px solid rgba(255, 170, 210, 0.25) !important;
+    border-radius: 20px !important;
+
+    box-shadow: 0 0 20px rgba(255, 150, 200, 0.25) !important;
+    backdrop-filter: blur(6px) !important;
+
+    transition: transform 250ms ease, box-shadow 250ms ease !important;
+}
+
+.card:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 0 30px rgba(255, 150, 210, 0.35) !important;
+}
+
+/* ===============================
+   TEXT
+================================ */
+.read-the-docs {
+    color: #b66fa8 !important;
+    font-style: italic !important;
+    letter-spacing: 0.5px !important;
+}
+
+/* ===============================
+   LINKURI
+================================ */
+a {
+    color: #d4379c !important;
+    transition: color 200ms ease, text-shadow 200ms ease !important;
+}
+
+a:hover {
+    color: #ff8fcf !important;
+    text-shadow: 0 0 6px rgba(255, 120, 180, 0.6) !important;
+}
+
+/* ===============================
+   BUTOANE
+================================ */
+button {
+    background: linear-gradient(90deg, #ff8fcf, #ffb0e8) !important;
+    color: white !important;
+    padding: 0.75rem 1rem !important;
+    border-radius: 12px !important;
+    border: none !important;
+    cursor: pointer !important;
+    font-weight: 600 !important;
+    transition: transform 200ms ease, box-shadow 200ms ease !important;
+}
+
+button:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0 0 20px rgba(255, 130, 200, 0.4) !important;
+}
+
+button:disabled {
+    opacity: 0.5 !important;
+    cursor: not-allowed !important;
+}
+
+/* ===============================
+   RESULT SCORE PANEL
+================================ */
+.result-scores {
+    background: rgba(255, 255, 255, 0.85) !important;
+    border-radius: 16px !important;
+    padding: 1.5rem !important;
+    box-shadow: 0 0 20px rgba(255, 150, 200, 0.25) !important;
+    border: 2px solid rgba(255, 120, 180, 0.35) !important;
+    transition: transform 200ms ease, box-shadow 200ms ease !important;
+}
+
+.result-scores:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 0 30px rgba(255, 120, 180, 0.45) !important;
+}
+
+.result-scores h3 {
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+    color: #d4379c !important;
+    margin-bottom: 0.75rem !important;
+}
+
+.result-score-item {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 0.5rem 0 !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    color: #333 !important;
+    border-bottom: 1px solid rgba(220, 180, 220, 0.4) !important;
+}
+
+.result-score-item:last-child {
+    border-bottom: none !important;
+}
+
+.result-score-label {
+    color: #a64ca6 !important;
+    font-weight: 600 !important;
+}
+
+.result-score-value {
+    font-weight: 700 !important;
+    color: #ff6eb4 !important;
+}
