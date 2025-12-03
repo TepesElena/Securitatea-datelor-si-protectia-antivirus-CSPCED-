@@ -193,7 +193,7 @@ button:disabled {
 }
 
 /* ===============================
-  chart
+  CHART
 ================================ */
 .chart-slice {
     filter: drop-shadow(0 0 8px rgba(255, 140, 200, 0.3));

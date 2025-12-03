@@ -11,7 +11,7 @@ export const ResultPanel = ({ result }) => {
 
   return (
     <div className="card border-purple-300 space-y-4">
-      {/* Indicație SPAM/HAM */}
+      /* Indicație SPAM/HAM */
       <div className={result.isSpam ? "bg-red-100 p-4 rounded flex items-center gap-3" : "bg-green-100 p-4 rounded flex items-center gap-3"}>
         {result.isSpam ? <AlertTriangle className="w-8 h-8 text-red-400" /> : <CheckCircle className="w-8 h-8 text-green-400" />}
         <div>
@@ -20,7 +20,7 @@ export const ResultPanel = ({ result }) => {
         </div>
       </div>
 
-      {/* Caseta cu scoruri */}
+      /* Caseta cu scoruri *
       <div className="result-scores">
         <h3>Scoruri Detaliate</h3>
         <div className="result-score-item">
